@@ -194,7 +194,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   whatsappMessage += "Email: " + email + "\n";
   whatsappMessage +=   message;
   // Constrói o link da API do WhatsApp com a mensagem
-  var whatsappLink = "https://api.whatsapp.com/send?phone=559991272248&text=" + encodeURIComponent(whatsappMessage);
+  var whatsappLink = "https://api.whatsapp.com/send?phone=5599981708802&text=" + encodeURIComponent(whatsappMessage);
 
   // Redireciona para o link do WhatsApp
   window.location.href = whatsappLink;
