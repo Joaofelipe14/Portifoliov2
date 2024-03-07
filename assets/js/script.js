@@ -191,8 +191,11 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
   // Monta a mensagem que será enviada via WhatsApp
   var whatsappMessage = "Olá, eu sou" + fullname + "\n";
-  whatsappMessage += "Email: " + email + "\n";
   whatsappMessage +=   message;
+
+  if(email){
+    whatsappMessage += "\n\nEmail: " + email;
+  }
   // Constrói o link da API do WhatsApp com a mensagem
   var whatsappLink = "https://api.whatsapp.com/send?phone=5599981708802&text=" + encodeURIComponent(whatsappMessage);
 
